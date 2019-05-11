@@ -1,5 +1,4 @@
 package com.company;
-import java.util.ArrayList;
 import com.company.model.Address;
 import com.company.model.Date;
 import com.company.model.Person;
@@ -22,7 +21,7 @@ public class Main {
    
    addressBook.addPerson(p2);
    
-   System.out.println(addressBook.toString);
+   System.out.println(addressBook.toString());
    
    }
    

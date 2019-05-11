@@ -4,7 +4,7 @@ public  class Person{
 	private int id;
 	private String name;
 	private Address address;
-	private Date brithday;
+	private Date birthday;
 	
 	public Person(){
 		this.id = 0;
@@ -37,7 +37,7 @@ public  class Person{
 	public void setBirthday(Date birthday){this.birthday = birthday;}
 	
 	public String toString(){
-		String str = "Id: " + Integer.toString(getId()) + "\nName: " + getName() + "\nAddress: " + getAddress().toString() + "\nBirthday: " + getBirthday().toString()
+		String str = "Id: " + Integer.toString(getId()) + "\nName: " + getName() + "\nAddress: " + getAddress().toString() + "\nBirthday: " + getBirthday().toString();
 		return str;
 	}
 }

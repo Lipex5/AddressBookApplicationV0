@@ -1,12 +1,13 @@
 package com.company.model;
 import java.util.ArrayList;
+import com.company.model.Person;
 
 public class AddressBook{
 	private String title;
 	private ArrayList<Person> people;
 	
 	public AddressBook(){
-		this.title = "My Address Book");
+		this.title = "My Address Book";
 	}
 	
 	public AddressBook(String title){
@@ -26,16 +27,17 @@ public class AddressBook{
 	
 	public Person getPerson(int id){
 		for(Person p : this.people){
-			if(p.id == id){
+			if(p.getId() == id){
 				return p;
 			}
-			else return null;
+			else 
+			    return new Person();
 		}
 	}
 	
 	public void deletePerson(int id){
 		for(Person p : this.people){
-			if(p.id == id){
+			if(p.getId() == id){
 				this.people.remove(p);
 			}
 		}

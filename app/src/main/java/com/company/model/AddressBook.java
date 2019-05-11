@@ -25,14 +25,13 @@ public class AddressBook{
 		this.people.add(p);
 	}
 	
-	public Person getPerson(int id){
+	 public Person getPerson(int id){
 		for(Person p : this.people){
 			if(p.getId() == id){
 				return p;
 			}
-			else 
-			    return new Person();
 		}
+		return new Person();
 	}
 	
 	public void deletePerson(int id){
